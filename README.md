@@ -1,4 +1,4 @@
-# Vapor. Setup digital ocean server 
+# 🚀🚀🚀 Vapor. Setup digital ocean server 🚀🚀🚀
 
 1. Create new droplet on **_Digital Ocean_**:
 
@@ -6,15 +6,18 @@
 
   <img width="531" alt="Знімок екрана 2023-01-11 о 14 15 49" src="https://user-images.githubusercontent.com/55681878/211816502-32ffc69c-82c6-4318-bf6b-a3c0adbd7762.png">
 
-2. Enter to your server:
+2. 🌐 Enter to your server:
   - open Terminal
   - enter ``` ssh root@_ipv4_ ```
   - enter password
 
 2. Download Swift
 - from swift.org, (version X86_64)
+
 ```wget _link_```
+
 - extract swift tar using 
+
 ```tar xzf swift.tar```
 
 3. Add extracted swift to root ~/.bashrc:
@@ -38,7 +41,7 @@ sudo apt-get install openssl libssl-dev zlib1g-dev libsqlite3-dev
 - **docker**: https://docs.docker.com/engine/install/ubuntu/
 - **vapor**: https://docs.vapor.codes/install/linux/
 
-6. Configure fire wall:
+6. Configure FireWall
 
 ```
 ufw allow OpenSSH
@@ -53,10 +56,10 @@ ufw enable
 
 ```git clone _link_```
 
-9. Compose **Database** for server:
+9. 💾 Compose **Database** for server:
   
 ```docker compose up db ```
 
-10. Start server:
+10. 🚀 Start server:
 
 ```sudo .build/debug/Run serve -b _ipv4_:80```
