@@ -49,10 +49,14 @@ ufw enable
 
 ```sudo ufw allow http```
 
-8. Compose **Database** for server:
+8. Clone vapor project to the server:
+
+```git clone _link_```
+
+9. Compose **Database** for server:
   
 ```docker compose up db ```
 
-9. Start server:
+10. Start server:
 
 ```sudo .build/debug/Run serve -b _ipv4_:80```
