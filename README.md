@@ -7,9 +7,11 @@ links:
 
 2.Download Swift
 - from swift.org, (version X86_64)
-- extract swift tar using tar xzf swift.tar
-
-3. Add export swift to ~/.bashrc
+- extract swift tar using 
+```
+tar xzf swift.tar
+```
+3. Add extracted swift to ~/.bashrc
 - vim ~/.bashrc
 - export PATH=~/pathto swift bin:"${PATH}"
 - run: swift --version
