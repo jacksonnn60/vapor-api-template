@@ -1,19 +1,21 @@
-# SETUP digital ocean server
+# Vapor. Setup digital ocean server 
 
-Links:
-- **digital ocean** setup: https://docs.vapor.codes/deploy/digital-ocean/
+1. Create new droplet on **_Digital Ocean_**:
 
-1. Create new droplet on 'Digital Ocean'
+  **Digital Ocean**: https://docs.vapor.codes/deploy/digital-ocean/
 
   <img width="531" alt="Знімок екрана 2023-01-11 о 14 15 49" src="https://user-images.githubusercontent.com/55681878/211816502-32ffc69c-82c6-4318-bf6b-a3c0adbd7762.png">
 
+2. Enter to your server:
+  - open Terminal
+  - enter ``` ssh root@_ipv4_ ```
+  - enter password
+
 2. Download Swift
 - from swift.org, (version X86_64)
+```wget _link_```
 - extract swift tar using 
-
-```
-tar xzf swift.tar
-```
+```tar xzf swift.tar```
 
 3. Add extracted swift to root ~/.bashrc:
 
@@ -45,18 +47,12 @@ ufw enable
 
 7. Allow HTTP:
 
-```
- sudo ufw allow http
-```
+```sudo ufw allow http```
 
-8. Compose **Database** for server: 
-
-```
-docker compose up db
-```
+8. Compose **Database** for server:
+  
+```docker compose up db ```
 
 9. Start server:
 
-```
-sudo .build/debug/Run serve -b _ipv4_:80
-```
+```sudo .build/debug/Run serve -b _ipv4_:80```
